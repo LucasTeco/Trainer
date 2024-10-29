@@ -2,6 +2,8 @@
 
 \build-template-data.php
 
+ php C:\Users\u545101\Desktop\LOCALHOST\Bootstrap\html-bootstrap-editor-showcase-teco-main\scripts\build-template-data.php
+
 ---------------------------------------------------------------------------------------------------------------------------
 
 git init
