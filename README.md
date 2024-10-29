@@ -13,10 +13,18 @@ git commit -m "Comentario"
 git push origin master
 
 html-bootstrap-editor-showcase-teco-main/
+
 ├── .git/
-├── data.json           # Aquí debe estar el data.json generado
+
+
 ├── scripts/
+
 │   ├── build-template-data.php
+
+│   ├── data.json
+
 ├── templates/
+
 │   ├── teco/
+
 │   │   └── tecojson.json
