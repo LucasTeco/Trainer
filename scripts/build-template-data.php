@@ -1,20 +1,20 @@
 <?php
 
-define('TEMPLATES_DATA', "../templates/");
-$file = "data.json";
+define('TEMPLATES_DATA', "C:/Users/u545101/Desktop/LOCALHOST/Bootstrap/html-bootstrap-editor-showcase-teco-main/templates/");
+$file = "C:/Users/u545101/Desktop/LOCALHOST/Bootstrap/html-bootstrap-editor-showcase-teco-main/docs/data.json";
 
 
 if(file_exists($file)){
-    echo "File '$file' already exist. Deleting it.\n";
+    echo "Archivo '$file' ya existe. Borrando.\n";
     unlink($file);
 }
 
 $data = getTemplates();
 
-echo "Writing on file '$file'.\n";
+echo "Escribiendo archivo '$file'.\n";
 file_put_contents($file, json_encode($data));
 
-echo "The execution has finished.\n";
+echo "Ejecución finalizada.\n";
 
 function getTemplates(){
     $result = new stdClass();

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Showcase</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Opcional: para estilos adicionales -->
+    <style>
+        /* Algunos estilos básicos para mostrar los datos */
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .template-item { margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; }
+        .template-title { font-weight: bold; font-size: 1.2em; }
+        .template-desc { font-style: italic; color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Showcase Templates</h1>
+    <div id="template-container">Cargando...</div>
+
+    <script>
+        // Cargar data.json y mostrar su contenido
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const container = document.getElementById('template-container');
+                container.innerHTML = '';
+
+                // Organizar templates genéricos y específicos
+                const { generic, specific } = data;
+                const templates = [...generic, ...specific];
+
+                templates.forEach(template => {
+                    const templateItem = document.createElement('div');
+                    templateItem.classList.add('template-item');
+                    
+                    const title = document.createElement('div');
+                    title.classList.add('template-title');
+                    title.innerText = template.title || "Sin título";
+                    
+                    const desc = document.createElement('div');
+                    desc.classList.add('template-desc');
+                    desc.innerText = template.desc || "Descripción no disponible";
+                    
+                    templateItem.appendChild(title);
+                    templateItem.appendChild(desc);
+
+                    container.appendChild(templateItem);
+                });
+            })
+            .catch(error => {
+                console.error("Error al cargar data.json:", error);
+                document.getElementById('template-container').innerText = "Error al cargar datos";
+            });
+    </script>
+</body>
+</html>
