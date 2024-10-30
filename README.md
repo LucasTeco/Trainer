@@ -6,6 +6,8 @@
 
 ---------------------------------------------------------------------------------------------------------------------------
 
+git pull origin master
+
 git init
 
 git add .
@@ -34,8 +36,4 @@ git push origin master
 
 │   │   └── tecojson.json
 
-
------------- PULL REQUEST ----
-cd C:\Users\u545101\Desktop\LOCALHOST\Bootstrap\html-bootstrap-editor-showcase-teco-main
-git pull origin master
 
