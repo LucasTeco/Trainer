@@ -6,13 +6,14 @@
 
 ---------------------------------------------------------------------------------------------------------------------------
 
-git pull origin master
 
 git init
 
 git add .
 
 git remote set-url origin https://github.com/LucasTeco/Trainer.git
+
+git pull origin master
 
 git commit -m "Actualización"
 
@@ -23,16 +24,19 @@ git push origin master
 
 ├── .git/
 
+├── docs/
+
+│   ├── index.html
+
+│   ├── data.json
 
 ├── scripts/
 
 │   ├── build-template-data.php
 
-│   ├── data.json
-
 ├── templates/
 
-│   ├── teco/
+│   ├── telecom/
 
 │   │   └── tecojson.json
 
