@@ -13,13 +13,13 @@ git remote set-url origin https://github.com/LucasTeco/Trainer.git
 
 git remote --v
 
-git pull origin master
+git pull origin pruebas
 
 git add .
 
 git commit -m "Actualización"
 
-git push origin master
+git push origin pruebas
 
 
 ---Estructura de repositorio en máquina---
