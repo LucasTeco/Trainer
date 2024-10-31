@@ -13,6 +13,8 @@ git add .
 
 git remote set-url origin https://github.com/LucasTeco/Trainer.git
 
+git remote --v
+
 git pull origin master
 
 git commit -m "Actualización"
